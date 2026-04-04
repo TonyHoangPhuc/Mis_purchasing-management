@@ -7,4 +7,6 @@ odoo \
   --http-port=$PORT \
   --http-interface=0.0.0.0 \
   --proxy-mode \
-  --db-filter=^postgres$
+  --db-filter=^postgres$ \
+  -i base \
+  --without-demo=all

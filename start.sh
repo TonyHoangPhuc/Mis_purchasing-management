@@ -7,7 +7,7 @@ odoo \
   --db_port=$DB_PORT \
   --db_user=$DB_USER \
   --db_password=$DB_PASSWORD \
-  --db_name=$DB_NAME \
+  --database=$DB_NAME \
   --db_sslmode=require \
   --http-port=10000 \
   --http-interface=0.0.0.0 \

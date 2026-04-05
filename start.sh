@@ -14,6 +14,7 @@ odoo \
   -d postgres \
   -i base \
   --db_sslmode=require \
+  --workers=0 \
+  --max-cron-threads=0 \
   --http-port=10000 \
-  --http-interface=0.0.0.0 \
-  --proxy-mode
+  --http-interface=0.0.0.0

@@ -1,10 +1,8 @@
 #!/bin/bash
 
-echo "Starting Odoo..."
-echo "DB NAME IS: $DB_NAME"
-echo "START SCRIPT RUNNING"
+echo "===== INIT ODOO DATABASE ====="
+echo "DB NAME: $DB_NAME"
 
-echo "INIT DB..."
 odoo \
   --db_host=$DB_HOST \
   --db_port=$DB_PORT \
@@ -15,4 +13,5 @@ odoo \
   --db_sslmode=require \
   --workers=0 \
   --max-cron-threads=0 \
-  --no-http
+  --http-port=10000 \
+  --http-interface=0.0.0.0
